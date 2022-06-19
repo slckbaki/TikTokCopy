@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1924895285F3ADF00781CE7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1924894285F3ADF00781CE7 /* Home.swift */; };
 		A1FB3B1727E08C86005CBC78 /* TiktokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB3B1627E08C86005CBC78 /* TiktokApp.swift */; };
 		A1FB3B1927E08C86005CBC78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB3B1827E08C86005CBC78 /* ContentView.swift */; };
 		A1FB3B1B27E08C8B005CBC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FB3B1A27E08C8B005CBC78 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1924894285F3ADF00781CE7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A1FB3B1327E08C86005CBC78 /* Tiktok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiktok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB3B1627E08C86005CBC78 /* TiktokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiktokApp.swift; sourceTree = "<group>"; };
 		A1FB3B1827E08C86005CBC78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A1FB3B0A27E08C86005CBC78 = {
+		A1924891285F064000781CE7 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
 				A1FB3B2827E08D5D005CBC78 /* video1.mp4 */,
@@ -53,6 +55,32 @@
 				A1FB3B2427E08D5B005CBC78 /* video4.mp4 */,
 				A1FB3B2627E08D5C005CBC78 /* video5.mp4 */,
 				A1FB3B2527E08D5B005CBC78 /* video6.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		A1924892285F065900781CE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1FB3B1827E08C86005CBC78 /* ContentView.swift */,
+				A1924894285F3ADF00781CE7 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1924893285F066600781CE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1FB3B0A27E08C86005CBC78 = {
+			isa = PBXGroup;
+			children = (
+				A1924892285F065900781CE7 /* View */,
+				A1924893285F066600781CE7 /* Model */,
+				A1924891285F064000781CE7 /* Videos */,
 				A1FB3B1527E08C86005CBC78 /* Tiktok */,
 				A1FB3B1427E08C86005CBC78 /* Products */,
 			);
@@ -70,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				A1FB3B1627E08C86005CBC78 /* TiktokApp.swift */,
-				A1FB3B1827E08C86005CBC78 /* ContentView.swift */,
 				A1FB3B1A27E08C8B005CBC78 /* Assets.xcassets */,
 				A1FB3B1C27E08C8B005CBC78 /* Preview Content */,
 			);
@@ -162,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FB3B1927E08C86005CBC78 /* ContentView.swift in Sources */,
+				A1924895285F3ADF00781CE7 /* Home.swift in Sources */,
 				A1FB3B1727E08C86005CBC78 /* TiktokApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

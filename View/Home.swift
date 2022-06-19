@@ -1,30 +1,39 @@
 //
-//  ContentView.swift
+//  Home.swift
 //  Tiktok
 //
-//  Created by Selcuk Baki on 15/3/22.
+//  Created by Selcuk Baki on 19/6/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Home()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
 struct Home:View {
     @State var indexNumber = 0
+    @State var top = true
     
     var body : some View {
         ZStack {
+            
+            
             VStack {
+                
+                HStack(spacing: 15){
+                    Button {
+                        top.toggle()
+                    } label: {
+                        Text("Followers")
+                    }.foregroundColor(self.top == false ? .white : Color.white.opacity(0.45))
+                    
+                    Button {
+                        top.toggle()
+                    } label: {
+                        Text("For")
+                            
+                    }.foregroundColor(self.top == true ? .white : Color.white.opacity(0.45))
+
+                    
+                }.padding(.top, 50)
+                
                 Spacer()
                 
                 HStack {
@@ -53,7 +62,7 @@ struct Home:View {
                             
                         } label: {
                             VStack {
-                                Image("message.fill")
+                                Image(systemName: "message.fill")
                                     .font(.title)
                                 .foregroundColor(.white)
                                 Text("1542")
@@ -82,6 +91,7 @@ struct Home:View {
                 
                 HStack(spacing: 0) {
                     Button {
+                        self.indexNumber = 0
                         
                     } label: {
                         Image("home")
@@ -92,7 +102,7 @@ struct Home:View {
                     }
                     Spacer(minLength: 0)
                     Button {
-                        
+                        self.indexNumber = 1
                     } label: {
                         Image("search")
                             .resizable()
@@ -103,7 +113,7 @@ struct Home:View {
                     
                     Spacer(minLength: 0)
                     Button {
-                        
+                        self.indexNumber = 3
                     } label: {
                         Image("upload")
                             .resizable()
@@ -114,7 +124,7 @@ struct Home:View {
                     
                     Spacer(minLength: 0)
                     Button {
-                        
+                        self.indexNumber = 2
                     } label: {
                         Image("comment")
                             .resizable()
